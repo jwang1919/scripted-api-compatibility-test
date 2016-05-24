@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sound Cloud Example</title>
+</head>
+<body>
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
+  <script>
+  SC.initialize({
+    client_id: 'be794de545fbcbe06a2445d38e7b408a'
+  });
+
+  var track_url = 'http://soundcloud.com/forss/flickermood';
+  SC.oEmbed(track_url, { auto_play: false }).then(function(oEmbed) {
+    console.log('oEmbed response: ', oEmbed);
+    document.getElementById("sound-cloud").innerHTML = oEmbed.html;
+  });
+  </script>
+  <div id="sound-cloud"></div>
+</body>
+</html>
