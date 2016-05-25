@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <!-- Generate token first before using this!!!-->
+  <script>
+    $.ajax({
+      type: "get",
+      url: "https://api.instagram.com/v1/tags/sneakers?access_token=3269026275.aa2c89d.d47728d0d1244281a0a3a0b6d8ca2139",
+      dataType: "jsonp",
+      success: function(json) {
+        console.log(json);
+      }
+    })
+  </script>
+</body>
+</html>

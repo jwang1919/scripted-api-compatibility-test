@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <!-- Generate token first before using this!!!-->
+  <script>
+    $.ajax({
+      type: "get",
+      url: "https://api.genius.com/account?access_token=mc94l316zkO9wsEiYhWP4sMF6Px9jdbfZ8E23YhmiGdRF2gS6mXl6r2KU0-f4eqM",
+      dataType: "json",
+      success: function(json) {
+        console.log(json);
+      }
+    })
+  </script>
+</body>
+</html>
