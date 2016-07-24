@@ -6,3 +6,5 @@ Planning on testing the following APIs:
 - GoogleMaps
 - YouTube
 - Instagram
+
+[Run Tests](https://jwang1919.github.io/scripted-api-compatibility-test/)
